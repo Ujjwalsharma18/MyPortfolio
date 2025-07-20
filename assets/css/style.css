@@ -12,7 +12,7 @@
   transition: all 0.2s linear;
 }
 html {
-  font-size: 62.5%;
+  font-size: 63.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -31,13 +31,13 @@ html {
   overflow-x: hidden;
 }
 html::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.9rem;
 }
 html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
+  background: rgb(239, 242, 243);
 }
 html::-webkit-scrollbar-thumb {
-  background: #420177;
+  background: #4508ea;
 }
 
 /* pre loader start */
@@ -70,8 +70,8 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  background-color: darkblue;
+  box-shadow: 2 5px 4px rgba(146, 161, 176, 0.3);
 }
 section {
   min-height: 100vh;
@@ -90,14 +90,24 @@ header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: black;
 }
 header .logo i {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 header .logo:hover {
-  color: #fc8c05;
+  color: purple;
 }
+
+header .logo {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header .logo:hover {
+  color: black;
+  transform: scale(2.1);
+}
+
 header .navbar ul {
   list-style: none;
   display: flex;
@@ -109,7 +119,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0e2431;
+  color: black;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -117,10 +127,21 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
+  color: #fc8c05;
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
 }
+header .navbar ul li a {
+  transition: all 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+  color: black;
+  border-bottom: 0.2rem solid #011aff;
+  padding: 0.5rem 0;
+  transform: scale(2);
+}
+
 /* navbar ends */
 
 /* hamburger icon starts*/
@@ -142,7 +163,7 @@ header .navbar ul li a:hover {
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color: #2506ad;
   }
   header .navbar ul {
     flex-flow: column;
@@ -167,7 +188,7 @@ header .navbar ul li a:hover {
     padding: 1rem;
     color: #fff;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #011aff;
+    border-bottom: 0.5rem solid #939da3;
   }
   .fa-times {
     transform: rotate(180deg);
@@ -186,6 +207,7 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
+  background-color: whitesmoke;          
 }
 .home #particles-js {
   position: absolute;
@@ -207,29 +229,30 @@ header .navbar ul li a:hover {
   padding-top: 1rem;
   z-index: 1;
 }
-.home .image {
+/* .home .image {
   flex: 1 1 40rem;
   z-index: 1;
-}
-.home .image img {
+} */
+/* .home .image img {
   width: 70%;
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-}
-.home .image img:hover {
+} */
+/* .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
+} */
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: black;
+  
 }
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: purple;
 }
 .home .content p {
   font-size: 2.5rem;
@@ -239,7 +262,7 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
+  color: purple;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -266,7 +289,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #1a047e;
+  background: orange;
 }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -407,7 +430,7 @@ header .navbar ul li a:hover {
   color: #011aff;
 }
 .resumebtn {
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 .resumebtn .btn {
   padding: 1.7rem 3rem;
@@ -415,7 +438,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
   color: #fff;
   background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  box-shadow: 5px 10px 10px rgba(48, 68, 247, 0.6);
   font-family: "Nunito", sans-serif;
 }
 .resumebtn .btn span {
@@ -429,7 +452,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #1a047e;
+  background: orange;
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
@@ -461,20 +484,20 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: rgb(255, 255, 255);
 }
 .skills h2 {
-  color: #fff;
+  color: black;
 }
 .skills .heading span {
-  color: rgb(255, 230, 0);
+  color: purple;
 }
 .skills .container {
   background: rgba(0, 0, 22, 0.4);
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
-  width: 90%;
+  width: 95%;
   margin: auto;
   margin-top: 2rem;
 }
@@ -534,7 +557,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  background: rgb(255, 255, 255);
   min-height: 80vh;
 }
 .education .qoute {
@@ -642,14 +665,14 @@ header .navbar ul li a:hover {
 /* work section starts */
 .work {
   /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: rgb(255, 255, 255);
 }
 .work h2 {
-  color: #fff;
+  color: black;
   padding: 1rem;
 }
 .work .heading span {
-  color: rgb(255, 230, 0);
+  color: purple;
 }
 .work .box-container {
   display: flex;
@@ -688,7 +711,7 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: lightskyblue;
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
@@ -729,16 +752,13 @@ header .navbar ul li a:hover {
   justify-content: center;
 }
 .work .viewall .btn {
-  position: relative;
-  line-height: 0;
-  padding: 1.6rem 3rem;
+    padding: 1.7rem 3rem;
   border-radius: 0.5em;
-  transition: 0.5s;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  border: 2px solid #fff;
-  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
-  text-align: center;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 5px 10px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
 }
 .work .viewall .btn span {
   font-weight: 600;
@@ -751,7 +771,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .work .viewall .btn:hover {
-  background: #fff;
+  background: orange;
   color: #000;
 }
 .work .viewall .btn:hover i {
@@ -769,7 +789,7 @@ header .navbar ul li a:hover {
   content: "";
   position: absolute;
   width: 6px;
-  background: #020133;
+  background: lightskyblue;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -815,7 +835,7 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid purple;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #f68c09;
 }
@@ -1213,7 +1233,7 @@ form .button-area {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #ffae00;
+  background: purple;
   color: rgb(13, 0, 44);
   border-radius: 50%;
   transition: 1s linear;
